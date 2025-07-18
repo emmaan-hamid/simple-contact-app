@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✏️ Update Contact"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#3F51B5"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Existing phone -->
+            <EditText
+                android:id="@+id/editOldPhone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Existing Phone"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:backgroundTint="#3F51B5"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Radio buttons -->
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <RadioButton
+                    android:id="@+id/radioName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Name"
+                    android:textColor="#3F51B5" />
+
+                <RadioButton
+                    android:id="@+id/radioPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Phone"
+                    android:textColor="#3F51B5"
+                    android:layout_marginStart="24dp" />
+            </RadioGroup>
+
+            <!-- New Name input (hidden initially) -->
+            <EditText
+                android:id="@+id/editNewName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter New Name"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:backgroundTint="#3F51B5"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone" />
+
+            <!-- New Phone input (hidden initially) -->
+            <EditText
+                android:id="@+id/editNewPhone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter New Phone"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:backgroundTint="#3F51B5"
+                android:layout_marginBottom="24dp"
+                android:visibility="gone" />
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/btnUpdateContact"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="UPDATE CONTACT"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#3F51B5"
+                android:padding="12dp"
+                android:elevation="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
